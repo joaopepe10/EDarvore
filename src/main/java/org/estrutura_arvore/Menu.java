@@ -10,6 +10,7 @@ public class  Menu {
     public static void chamarMenu(){
         in = new Scanner(System.in);
         int opc = 0;
+        Arvore arvore = new Arvore();
         do {
             System.out.println("DIGITE UMA OPCAO: ");
             System.out.println("1-INCLUIR NO NA ARVORE: ");
@@ -24,6 +25,9 @@ public class  Menu {
 
             switch (opc){
                 case 1:
+                    System.out.println("Digite um numero que voce deseja adicionar a arvore: ");
+                    Integer no = in.nextInt();
+                    arvore.adcNo(no);
                     break;
                 case 2:
                     break;
